@@ -28,7 +28,7 @@
     <a href="README_EN.md" alt="README in English">EN</a>
 </p>
 
-### :link: Acesse em [https://pomotraining.vercel.app/](https://pomotraining.vercel.app/).
+### :link: Go to [https://pomotraining.vercel.app/](https://pomotraining.vercel.app/).
 
 [comment]: # (Foto do app)
 [comment]: # (Mockup IPhone https://mockuphone.com/device/iphone12black)
@@ -43,50 +43,50 @@
     </tr>
 </table>
 
-## :bookmark_tabs: Índice
+## :bookmark_tabs: Summary
 
-1.  [O que é o projeto?](#abstract)
-2.  [Melhorias realizadas no projeto original](#improvements)
-3.  [Layout do projeto](#images)
-4.  [Tecnologias utilizadas](#stack)
-5.  [Como executar o código](#how-to-run)
-6.  [Licença](#license)
+1.  [What is the project?](#abstract)
+2.  [Improvements to the original project](#improvements)
+3.  [Project's layout](#images)
+4.  [Technologies](#stack)
+5.  [How to run the code](#how-to-run)
+6.  [License](#license)
 
 <div id='abstract'/>
 
-## :computer: O que é PomoTraning
+## :computer: What is the project PomoTraning?
 
-> O projeto pomoTraining é uma aplicação que une Pomodoro e Exercícios físicos, nasceu com base no projeto MoveIt da NLW 4.0 da Rockeatseat. Porém, passou por diversas melhorias e alterações.
+> PomoTraining is a Pomodoro application with physical activity in short break interval. It is based on MoveIt project of the NLW 4.0 by Rocketseat. But, I made many improvements and changes.
 
 <div id='improvements'/>
 
-## :clap: Melhorias realizadas no projeto original
+## :clap: Improvements to the original project
 
--   :star2: Uso mais eficiência do Timeout, pois ele não executa exatamente a cada 1s, depende do navegador, assim foi preciso ajustar para contar de forma exata;
--   :star2: Uso de web worker para atualização do contador em background;
--   :wrench: Alteração do nome e logo do projeto, ambos pensados e criados por mim ([@arthurassuncao](http://github.com/arthurAssuncao));
--   :waning_crescent_moon: Adição de tema dark e light;
--    :up: Adição de uma tela de login para o usuário indicar o username do seu github;
--   :octocat: Carregamento de informações do Github do usuário com base no username do usuário;
--   :cookie: Dados são salvos em cookie ;
--   :up: Adição de tela de configurações para configurar tempo do pomodoro, numero de atividades físicas por ciclo e usuário do github;
--   :up: Adição de menu lateral;
--   :up: Alteração nos desafios com a inclusão de imagens ilustrativas para facilitar a execução;
--   :heavy_check_mark: Os desafios utilizados foram pensados com base em exercícios fáceis e que eu já faço no dia a dia;
--   :up: Adição de animação em alguns componentes;
--   :heavy_check_mark: Uso de SASS em vez de CSS no CSS Modules;
+-   :star2: Use of More efficient Timeout, because it doen't run exactly every second (1sec), it depends of browser, so it needed correction to count exactly.
+-   :star2: Use of Web worker for background counter update;
+-   :wrench: Name and Logo changed, both thinked and created by me ([@arthurassuncao](http://github.com/arthurAssuncao));
+-   :waning_crescent_moon: Dark and Light theme added;
+-   :up: Login screen added with github username;
+-   :octocat: Loading Github data from github username;
+-   :cookie: Data are saved in cookies;
+-   :up: Settings screen added with three options: 1) pomodoro time; 2) number of physical activities per circle; and 3) github username;
+-   :up: Sidebar menu added;
+-   :up: Change in challenges with the inclusion of illustrative images to facilitate execution;
+-   :heavy_check_mark: Challenges were thought from easy exercises, including exercises that I do on a daily basis;
+-   :up: Animation were added in some components;
+-   :heavy_check_mark: I used SASS with CSS Modules instead simple CSS;
 
 <div id='images'/>
 
-## :camera: Layout do projeto
+## :camera: Project's layout
 
 #### :iphone: Tela mobile
 
 <table align="center">
 	<tr>
-    	<td align="center"><strong>Tela de Login</strong></td>
-        <td align="center"><strong>Tela Home</strong></td>
-        <td align="center"><strong>Tela Home no tema Dark</strong></td>
+    	<td align="center"><strong>Login Screen</strong></td>
+        <td align="center"><strong>Home Screen</strong></td>
+        <td align="center"><strong>Home Screen with Dark theme</strong></td>
     </tr>
     <tr>
         <td align="center"><img src="https://raw.githubusercontent.com/ArthurAssuncao/pomoTraining/main/docs/screenshots/mobile.png" alt="Tela mobile" width="75%" /></td>
@@ -95,25 +95,25 @@
     </tr>
 </table>
 
-#### :computer: Tela de Login em Tablet
+#### :computer: Tablet login screen
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ArthurAssuncao/pomoTraining/main/docs/screenshots/tablet-login.png" height="500px" alt="Tela de Login em Tablet" />
 </p>
 
-#### :computer: Tela Home em Tablet
+#### :computer: Tablet home screen
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ArthurAssuncao/pomoTraining/main/docs/screenshots/tablet-home.png" height="500px" alt="Tela Home em Tablet" />
 </p>
 
-#### :computer: Tela Home em Tablet no tema Dark
+#### :computer: Tablet home screen with Dark theme
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ArthurAssuncao/pomoTraining/main/docs/screenshots/tablet-home-dark.png" height="500px" alt="Tela Home em Tablet no tema Dark" />
 </p>
 
-#### :computer: Tela de Configurações em Tablet
+#### :computer: Tablet settings screen
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ArthurAssuncao/pomoTraining/main/docs/screenshots/tablet-config.png" height="500px" alt="Tela de Configurações em Tablet" />
@@ -121,39 +121,38 @@
 
 <div id='stack'/>
 
-## :sparkles: Tecnologias utilizadas
+## :sparkles: Technologies
 
-O Front-end do site é feito utilizando:
+Website Front-end is made using:
 
--   **Nextjs** com o uso de renderização no lado servidor (SSR - Server Side Rendering);
--   **ReactJS**: diversos pacotes são utilizados;
--   **CSS Modules com SASS**: para isolar os componentes e ter maior controle;
--   **Variáveis CSS** para manter consistência nos valores de propriedades;
--   **Temas light e dark**: os temas claro e escuro são criados com o uso de variáveis css, facilitando o uso e manutenção;
+-   **Nextjs** with Server Side Rendering (SSR);
+-   **ReactJS**: many packages are used.
+-   **CSS Modules com SASS**: To isolate component styles in React and have more control.
+-   **Variáveis CSS** to keep consistency in properties values;
+-   **Temas light e dark**: dark and light themes are made with CSS variable, thus improving the use and code maintenance.
 
 <div id='how-to-run'/>
 
-## :runner: Como executar o código
+## :runner: How to run the code
 
-Para rodar localmente utilize o comando abaixo:
+Runs the app in development mode, use the command:
 
 ```bash
 yarn dev
 ```
 
-Para realizar o build local, utilize o comando:
+Builds the app for production to the build folder, use the command:
 
 ```bash
 yarn build
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado.
+Open http://localhost:3000 to view it in the browser.
 
+# :memo: License
 
-
-# :memo: Licença
-Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+This project is under the MIT license. See the LICENSE file for more details.
 
 <hr>
 
-Feito com :hearts: por Arthur Assuncao.
+Made with :hearts: by Arthur Assuncao.

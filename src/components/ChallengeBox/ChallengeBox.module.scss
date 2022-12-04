@@ -1,0 +1,202 @@
+@keyframes iconAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+:root body[data-theme="dark"] {
+  .container {
+    .active {
+      .content {
+        .contentImageWrapper {
+          .contentImage {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  height: 100%;
+  background-color: var(--background2);
+  border-radius: 5px;
+  box-shadow: 0 0 60px var(--container-shadow);
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  .active {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      color: var(--blue);
+      font-weight: 600;
+      font-size: 1.25rem;
+      padding: 0 2rem 1.5rem;
+      border-bottom: 1px solid var(--gray-line);
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .contentTitle {
+        font-weight: 600;
+        font-size: 2rem;
+        color: var(--title);
+        margin: 1rem 0 1rem;
+      }
+
+      .contentImageWrapper {
+        position: relative;
+        height: 100%;
+        height: clamp(150px, 100%, 150px);
+        display: flex;
+        align-self: center;
+
+        @media (min-width: 992px) {
+          height: clamp(150px, 100%, 190px);
+        }
+
+        .contentImage {
+          height: 100%;
+          height: clamp(50px, 100%, 150px);
+          max-width: 100%;
+          object-fit: contain;
+          padding: 0 1rem 0.5rem 1rem;
+
+          @media (min-width: 992px) {
+            height: clamp(150px, 100%, 190px);
+          }
+        }
+
+        .contentImageCopyright {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          font-size: 0.5rem;
+          letter-spacing: 0.1rem;
+          writing-mode: vertical-rl;
+        }
+      }
+
+      .contentDescription {
+        line-height: 1.5;
+        text-align: left;
+        hyphens: auto;
+      }
+
+      .contentHowDo {
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-self: flex-start;
+        margin-top: 0.3rem;
+
+        .contentHowDoIcon {
+          height: 1.5rem;
+          padding: 0.15rem 0.5rem 0.15rem 0;
+        }
+
+        .contentHowDoMsg {
+          text-align: left;
+        }
+      }
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+
+      .button {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 5px;
+        color: var(--white);
+        font-size: 1rem;
+        font-weight: 600;
+        transition: filter 0.5s ease, box-shadow 0.5s ease;
+
+        &:hover {
+          filter: brightness(0.9);
+          box-shadow: 0 0 20px var(--gray-line);
+        }
+      }
+
+      .buttonFailed {
+        background-color: var(--red);
+      }
+
+      .buttonNext {
+        background-color: var(--text-highlight);
+        transition: background-color 0.5s ease;
+
+        &:hover {
+          background-color: var(--blue);
+        }
+      }
+
+      .buttonSucceeded {
+        background-color: var(--green);
+      }
+    }
+  }
+
+  .notActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .contentTitle {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+
+      .contentDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.4;
+        max-width: 70%;
+        margin-top: 3rem;
+
+        .contentIcon {
+          margin-bottom: 1rem;
+          width: 3rem;
+          &.iconAnimation {
+            animation: iconAnimation 1s infinite;
+          }
+        }
+      }
+    }
+  }
+}

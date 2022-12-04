@@ -1,0 +1,74 @@
+@keyframes iconAnimation {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.overlay {
+  background-color: var(--gray-line);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    background-color: var(--background2);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 60px var(--container-shadow);
+    text-align: center;
+    position: relative;
+
+    .header {
+      font-size: 8.75rem;
+      font-weight: 600;
+      color: var(--blue);
+      background: url("../../assets/img/icons/levelup.svg") no-repeat center;
+      background-size: contain;
+      animation: iconAnimation 1.5s infinite;
+    }
+
+    .title {
+      font-size: 2.25rem;
+      color: var(--title);
+      margin-top: 0.25rem;
+    }
+
+    .description {
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-top: 0.25rem;
+    }
+
+    .button {
+      position: absolute;
+      right: 0.5rem;
+      top: 0.5rem;
+      background-color: transparent;
+      border: 0;
+      font-size: 0;
+      .buttonIcon {
+        transition: box-shadow 0.5s ease;
+
+        svg {
+          width: 3.2rem;
+        }
+      }
+      &:hover .buttonIcon {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
