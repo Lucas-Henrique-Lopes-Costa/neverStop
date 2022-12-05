@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
       </div>
       <p className={styles.copyright}>
-        Criado por Lucas Henrique @ 2022 com diversas melhorias no projeto MoveIt da 4ª Next Level Week oferecido pela RocketSeat
+        Criado por Lucas Henrique @ 2022 com diversas melhorias no projeto MoveIt da 4ª NLW. Agradecimento especial para o Arthur Assunção, pelo incrível projeto!
       </p>
     </footer>
   );
