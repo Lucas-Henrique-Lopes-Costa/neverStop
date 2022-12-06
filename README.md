@@ -1,20 +1,5 @@
 # Conheça o NeverStop
-Esse projeto é um fork do projeto feito pelo Arthur Assunção. Melhorias no design e algumas novas funcionalidades.
-
-<!-- ### Acesse em . -->
-
-[comment]: # (Foto do app)
-[comment]: # (Mockup IPhone https://mockuphone.com/device/iphone12black)
-[comment]: # (Mockup IPad https://mockuphone.com/device/ipadsilver)
-[comment]: # (Emoji list https://gist.github.com/rxaviers/7360908)
-
-<table align="center">
-    <tr>
-        <td align="center"><img src="https://raw.githubusercontent.com/ArthurAssuncao/pomoTraining/main/docs/screenshots/mobile.png" alt="Tela mobile" width="75%" /></td>
-        <td align="center"><img src="https://raw.githubusercontent.com/ArthurAssuncao/pomoTraining/main/docs/screenshots/mobile-home.png"  alt="Tela mobile home" width="75%" /></td>
-        <td align="center"><img src="https://raw.githubusercontent.com/ArthurAssuncao/pomoTraining/main/docs/screenshots/mobile-home-dark.png" alt="Tela mobile home dark" width="75%" /></td>
-    </tr>
-</table>
+Esse projeto é um fork do projeto feito pelo [Arthur Assunção](https://github.com/ArthurAssuncao). Melhorias no design e algumas novas funcionalidades.
 
 ## Como executar o código
 
